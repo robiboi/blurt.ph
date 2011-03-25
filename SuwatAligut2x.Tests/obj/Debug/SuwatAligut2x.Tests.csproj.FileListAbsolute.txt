@@ -1,0 +1,28 @@
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\obj\Debug\ResolveAssemblyReference.cache
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.Tests.dll.config
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.Tests.dll
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.Tests.pdb
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.dll
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.pdb
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\obj\Debug\SuwatAligut2x.Tests.dll
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\obj\Debug\SuwatAligut2x.Tests.pdb
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.Data.dll
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.Data.pdb
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.Tests.dll.config
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.Tests.dll
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.Tests.pdb
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.dll
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.Data.dll
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.Data.pdb
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.pdb
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\obj\Debug\ResolveAssemblyReference.cache
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\obj\Debug\SuwatAligut2x.Tests.dll
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\obj\Debug\SuwatAligut2x.Tests.pdb
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\DotNetOpenAuth.dll
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\DotNetOpenAuth.pdb
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\DotNetOpenAuth.xml
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\sr\DotNetOpenAuth.resources.dll
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\DotNetOpenAuth.dll
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\DotNetOpenAuth.pdb
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\DotNetOpenAuth.xml
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\sr\DotNetOpenAuth.resources.dll

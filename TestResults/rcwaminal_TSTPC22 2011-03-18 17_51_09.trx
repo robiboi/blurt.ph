@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="593f7532-23ba-422b-9bc7-d8d654bf7507" name="rcwaminal@TSTPC22 2011-03-18 17:51:09" runUser="CORP\rcwaminal" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Default Run Configuration" id="21a4f781-7b50-4834-89e3-2a6dac64e21c">
+    <Deployment runDeploymentRoot="E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\TestResults\rcwaminal_TSTPC22 2011-03-18 17_51_09">
+      <DeploymentItem filename="E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\bin\Debug\SuwatAligut2x.Data.dll" />
+      <DeploymentItem filename="E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x\bin\SuwatAligut2x.dll" />
+    </Deployment>
+    <Hosts skipUnhostableTests="false" />
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="TSTPC22" outcome="Warning" timestamp="2011-03-18T17:51:13.8750094+08:00">
+        <Text>Warning: Test Run deployment issue: The assembly or module 'log4net' directly or indirectly referenced by the test container 'e:\rob\projects (local copy)\suwat2x\suwataligut2x\suwataligut2x.tests\bin\debug\suwataligut2x.tests.dll' was not found.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <Times creation="2011-03-18T17:51:09.5781069+08:00" queuing="2011-03-18T17:51:13.9218847+08:00" start="2011-03-18T17:51:14.2500118+08:00" finish="2011-03-18T17:51:15.0937672+08:00" />
+  <TestDefinitions>
+    <UnitTest name="CreateNewUserTest" storage="e:\rob\projects (local copy)\suwat2x\suwataligut2x\suwataligut2x.tests\bin\debug\suwataligut2x.tests.dll" id="f3a86664-6de9-32ff-d623-74f6fc0dd3e7">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="d0eb7d11-21b0-4790-b0a6-b4fee2a20560" />
+      <TestMethod codeBase="E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\bin\Debug\SuwatAligut2x.Tests.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SuwatAligut2x.Tests.RandomTests, SuwatAligut2x.Tests" name="CreateNewUserTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f3a86664-6de9-32ff-d623-74f6fc0dd3e7" executionId="d0eb7d11-21b0-4790-b0a6-b4fee2a20560" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d0eb7d11-21b0-4790-b0a6-b4fee2a20560" testId="f3a86664-6de9-32ff-d623-74f6fc0dd3e7" testName="CreateNewUserTest" computerName="TSTPC22" duration="00:00:00.1658493" startTime="2011-03-18T17:51:14.3281373+08:00" endTime="2011-03-18T17:51:15.0468919+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method SuwatAligut2x.Tests.RandomTests.CreateNewUserTest threw exception:  System.NullReferenceException: Object reference not set to an instance of an object..</Message>
+          <StackTrace>    at SuwatAligut2x.Data.Repositories.BaseRepository..ctor() in E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\Repositories\BaseRepository.cs:line 11
+   at SuwatAligut2x.Data.Repositories.TagIyaRepository..ctor()
+   at SuwatAligut2x.Models.UsersModels.CreateNewUser(String openId, String openIdFriendly) in E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x\Models\UsersModels.cs:line 71
+   at SuwatAligut2x.Tests.RandomTests.CreateNewUserTest() in E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Tests\RandomTests.cs:line 70
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

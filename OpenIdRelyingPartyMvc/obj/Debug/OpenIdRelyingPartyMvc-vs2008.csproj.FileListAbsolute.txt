@@ -1,0 +1,16 @@
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\obj\Debug\ResolveAssemblyReference.cache
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\bin\OpenIdRelyingPartyMvc.dll
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\bin\OpenIdRelyingPartyMvc.pdb
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\bin\DotNetOpenAuth.pdb
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\bin\DotNetOpenAuth.xml
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\bin\sr\DotNetOpenAuth.resources.dll
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\obj\Debug\OpenIdRelyingPartyMvc.dll
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\obj\Debug\OpenIdRelyingPartyMvc.pdb
+D:\WebFiles\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\bin\OpenIdRelyingPartyMvc.dll
+D:\WebFiles\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\bin\OpenIdRelyingPartyMvc.pdb
+D:\WebFiles\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\bin\DotNetOpenAuth.pdb
+D:\WebFiles\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\bin\DotNetOpenAuth.xml
+D:\WebFiles\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\bin\sr\DotNetOpenAuth.resources.dll
+D:\WebFiles\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\obj\Debug\ResolveAssemblyReference.cache
+D:\WebFiles\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\obj\Debug\OpenIdRelyingPartyMvc.dll
+D:\WebFiles\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\obj\Debug\OpenIdRelyingPartyMvc.pdb

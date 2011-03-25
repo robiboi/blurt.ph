@@ -1,0 +1,5 @@
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\facebook\bin\Debug\FacebookAPI.dll
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\facebook\bin\Debug\FacebookAPI.pdb
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\facebook\obj\Debug\ResolveAssemblyReference.cache
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\facebook\obj\Debug\FacebookAPI.dll
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\facebook\obj\Debug\FacebookAPI.pdb

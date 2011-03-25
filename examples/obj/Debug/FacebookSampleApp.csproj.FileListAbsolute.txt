@@ -1,0 +1,5 @@
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\examples\bin\Debug\FacebookSampleApp.exe
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\examples\bin\Debug\FacebookSampleApp.pdb
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\examples\obj\Debug\ResolveAssemblyReference.cache
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\examples\obj\Debug\FacebookSampleApp.exe
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\examples\obj\Debug\FacebookSampleApp.pdb

@@ -1,0 +1,69 @@
+﻿#posts
+{
+    width: 700px;
+}
+
+.PostPreview
+{
+    clear: both;
+    min-height: 80px;
+    border-bottom: 1px dotted #ccc;
+    padding: 10px 5px;
+}
+
+.PostPreview .statcontainer
+{
+    float: left;
+    width: 60px;
+}
+
+.PostPreview .Summary
+{
+    float: left;
+    width: 630px;
+}
+
+.PostPreview .Message
+{
+    float: left;
+    width: 630px;
+    padding: 5px 5px 50px 10px;
+}
+
+.PostPreview .CommentsContainer
+{
+    float: left;
+    width: 630px;
+    border-top: 1px dotted #ccc;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-size: 10px;
+}
+
+.PostPreview .Summary .UserInfo
+{
+    padding-top: 10px;
+    float: right;
+}
+
+#CommentsContainer div.Comment
+{
+    padding: 5px;
+    padding-left: 20px;
+    border-bottom: 1px dotted #ccc;
+    min-height: 30px;
+}
+
+.Votes
+{
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.Votes span
+{
+    font-size: 12px;
+    font-weight: normal;
+}

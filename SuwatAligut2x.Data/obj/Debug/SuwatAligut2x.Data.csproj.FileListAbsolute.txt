@@ -1,0 +1,12 @@
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\bin\Debug\SuwatAligut2x.Data.dll.config
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\bin\Debug\SuwatAligut2x.Data.dll
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\bin\Debug\SuwatAligut2x.Data.pdb
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\obj\Debug\ResolveAssemblyReference.cache
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\obj\Debug\SuwatAligut2x.Data.dll
+E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\obj\Debug\SuwatAligut2x.Data.pdb
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\obj\Debug\ResolveAssemblyReference.cache
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\obj\Debug\SuwatAligut2x.Data.dll
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\bin\Debug\SuwatAligut2x.Data.dll.config
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\bin\Debug\SuwatAligut2x.Data.dll
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\bin\Debug\SuwatAligut2x.Data.pdb
+D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x.Data\obj\Debug\SuwatAligut2x.Data.pdb

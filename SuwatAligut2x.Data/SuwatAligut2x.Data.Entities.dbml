@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="SuwatAligut2x" Class="SuwatAligut2x_Data_EntitiesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TSTPC22;Initial Catalog=SuwatAligut2x;Integrated Security=True" SettingsObjectName="SuwatAligut2x.Data.Properties.Settings" SettingsPropertyName="SuwatAligut2xConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BotarSaMensahe" Member="BotarSaMensahes">
+    <Type Name="BotarSaMensahe">
+      <Column Name="BotarSaMensaheId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MessageId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VotersId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Mensahe_BotarSaMensahe" Member="Mensahe" ThisKey="MessageId" OtherKey="MessageId" Type="Mensahe" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="TagIya_BotarSaMensahe" Member="TagIya" ThisKey="VotersId" OtherKey="UserId" Type="TagIya" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Kumentaryo" Member="Kumentaryos">
+    <Type Name="Kumentaryo">
+      <Column Name="CommentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MessageId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CommentorsId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="DatePosted" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DateEdited" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Mensahe_Kumentaryo" Member="Mensahe" ThisKey="MessageId" OtherKey="MessageId" Type="Mensahe" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="TagIya_Kumentaryo" Member="TagIya" ThisKey="CommentorsId" OtherKey="UserId" Type="TagIya" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Mensahe" Member="Mensahes">
+    <Type Name="Mensahe">
+      <Column Name="MessageId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="DatePosted" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DateEdited" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Mensahe_BotarSaMensahe" Member="BotarSaMensahes" ThisKey="MessageId" OtherKey="MessageId" Type="BotarSaMensahe" />
+      <Association Name="Mensahe_Kumentaryo" Member="Kumentaryos" ThisKey="MessageId" OtherKey="MessageId" Type="Kumentaryo" />
+      <Association Name="Mensahe_MensaheSaTagIya" Member="MensaheSaTagIyas" ThisKey="MessageId" OtherKey="MessageId" Type="MensaheSaTagIya" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MensaheSaTagIya" Member="MensaheSaTagIyas">
+    <Type Name="MensaheSaTagIya">
+      <Column Name="MensaheSaTagIyaId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MessageId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Mensahe_MensaheSaTagIya" Member="Mensahe" ThisKey="MessageId" OtherKey="MessageId" Type="Mensahe" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="TagIya_MensaheSaTagIya" Member="TagIya" ThisKey="UserId" OtherKey="UserId" Type="TagIya" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OpenIdSaTagIya" Member="OpenIdSaTagIyas">
+    <Type Name="OpenIdSaTagIya">
+      <Column Name="OpenId" Type="System.String" DbType="NVarChar(250) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FriendlyOpenId" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="TagIya_OpenIdSaTagIya" Member="TagIya" ThisKey="UserId" OtherKey="UserId" Type="TagIya" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TagIya" Member="TagIyas">
+    <Type Name="TagIya">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ScreenName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Gravatar" Type="System.String" DbType="NVarChar(125)" CanBeNull="true" />
+      <Column Name="RealName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Location" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="TagIya_BotarSaMensahe" Member="BotarSaMensahes" ThisKey="UserId" OtherKey="VotersId" Type="BotarSaMensahe" />
+      <Association Name="TagIya_Kumentaryo" Member="Kumentaryos" ThisKey="UserId" OtherKey="CommentorsId" Type="Kumentaryo" />
+      <Association Name="TagIya_MensaheSaTagIya" Member="MensaheSaTagIyas" ThisKey="UserId" OtherKey="UserId" Type="MensaheSaTagIya" />
+      <Association Name="TagIya_OpenIdSaTagIya" Member="OpenIdSaTagIyas" ThisKey="UserId" OtherKey="UserId" Type="OpenIdSaTagIya" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SPD_PagKuhaSaMensahe" Method="SPD_PagKuhaSaMensahe">
+    <Parameter Name="MessageId" Parameter="messageId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SPI_BuhatUgMensahe" Method="SPI_BuhatUgMensahe">
+    <Parameter Name="Message" Parameter="message" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SPI_BotarSaMensahe" Method="SPI_BotarSaMensahe">
+    <Parameter Name="MessageId" Parameter="messageId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="VotersId" Parameter="votersId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SPI_BuhatUgKumentaryo" Method="SPI_BuhatUgKumentaryo">
+    <Parameter Name="Comment" Parameter="comment" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="MessageId" Parameter="messageId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CommentorsId" Parameter="commentorsId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SPD_PagkuhaSaKumentaryo" Method="SPD_PagkuhaSaKumentaryo">
+    <Parameter Name="CommentId" Parameter="commentId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SPD_PagKuhaSaOpenId" Method="SPD_PagKuhaSaOpenId">
+    <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="OpenId" Parameter="openId" Type="System.String" DbType="NVarChar(250)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SPI_PunoUgOpenId" Method="SPI_PunoUgOpenId">
+    <Parameter Name="UserId" Parameter="userId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="OpenId" Parameter="openId" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="FriendlyOpenId" Parameter="friendlyOpenId" Type="System.String" DbType="NVarChar(150)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SPI_BagOngTagIya" Method="SPI_BagOngTagIya">
+    <Parameter Name="OpenId" Parameter="openId" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="OpenIdFriendly" Parameter="openIdFriendly" Type="System.String" DbType="NVarChar(150)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuwatAligut2x", "SuwatAligut2x\SuwatAligut2x.csproj", "{0AB52CE3-3156-4EDF-A0E2-9CE641D38858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuwatAligut2x.Tests", "SuwatAligut2x.Tests\SuwatAligut2x.Tests.csproj", "{E4C2F689-49B5-4E8A-B276-29D55DE1EE75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuwatAligut2x.Data", "SuwatAligut2x.Data\SuwatAligut2x.Data.csproj", "{6295E9F6-B3E6-4007-887B-8837B36B7C70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenIdRelyingPartyMvc-vs2008", "OpenIdRelyingPartyMvc\OpenIdRelyingPartyMvc-vs2008.csproj", "{07B193F1-68AD-4E9C-98AF-BEFB5E9403CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oAuthSample", "sample\oAuthSample.csproj", "{E82C5295-70AC-4EDB-ADA3-2EE4F73401E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookAPI", "facebook\FacebookAPI.csproj", "{1F538275-4C0C-4983-8D92-BFF2AA0E5FC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookSampleApp", "examples\FacebookSampleApp.csproj", "{E2CC8F94-26B6-411F-AC4A-E0541D026CB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AB52CE3-3156-4EDF-A0E2-9CE641D38858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB52CE3-3156-4EDF-A0E2-9CE641D38858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB52CE3-3156-4EDF-A0E2-9CE641D38858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB52CE3-3156-4EDF-A0E2-9CE641D38858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C2F689-49B5-4E8A-B276-29D55DE1EE75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C2F689-49B5-4E8A-B276-29D55DE1EE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C2F689-49B5-4E8A-B276-29D55DE1EE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C2F689-49B5-4E8A-B276-29D55DE1EE75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6295E9F6-B3E6-4007-887B-8837B36B7C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6295E9F6-B3E6-4007-887B-8837B36B7C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6295E9F6-B3E6-4007-887B-8837B36B7C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6295E9F6-B3E6-4007-887B-8837B36B7C70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B193F1-68AD-4E9C-98AF-BEFB5E9403CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B193F1-68AD-4E9C-98AF-BEFB5E9403CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B193F1-68AD-4E9C-98AF-BEFB5E9403CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B193F1-68AD-4E9C-98AF-BEFB5E9403CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E82C5295-70AC-4EDB-ADA3-2EE4F73401E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E82C5295-70AC-4EDB-ADA3-2EE4F73401E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E82C5295-70AC-4EDB-ADA3-2EE4F73401E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E82C5295-70AC-4EDB-ADA3-2EE4F73401E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F538275-4C0C-4983-8D92-BFF2AA0E5FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F538275-4C0C-4983-8D92-BFF2AA0E5FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F538275-4C0C-4983-8D92-BFF2AA0E5FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F538275-4C0C-4983-8D92-BFF2AA0E5FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2CC8F94-26B6-411F-AC4A-E0541D026CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2CC8F94-26B6-411F-AC4A-E0541D026CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2CC8F94-26B6-411F-AC4A-E0541D026CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2CC8F94-26B6-411F-AC4A-E0541D026CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
