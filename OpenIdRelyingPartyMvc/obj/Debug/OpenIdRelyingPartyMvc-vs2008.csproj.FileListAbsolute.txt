@@ -14,3 +14,11 @@ D:\WebFiles\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\bin\sr\DotNetOpenAuth.re
 D:\WebFiles\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\obj\Debug\ResolveAssemblyReference.cache
 D:\WebFiles\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\obj\Debug\OpenIdRelyingPartyMvc.dll
 D:\WebFiles\Suwat2x\SuwatAligut2x\OpenIdRelyingPartyMvc\obj\Debug\OpenIdRelyingPartyMvc.pdb
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\OpenIdRelyingPartyMvc\bin\OpenIdRelyingPartyMvc.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\OpenIdRelyingPartyMvc\bin\OpenIdRelyingPartyMvc.pdb
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\OpenIdRelyingPartyMvc\bin\DotNetOpenAuth.pdb
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\OpenIdRelyingPartyMvc\bin\DotNetOpenAuth.xml
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\OpenIdRelyingPartyMvc\bin\sr\DotNetOpenAuth.resources.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\OpenIdRelyingPartyMvc\obj\Debug\ResolveAssemblyReference.cache
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\OpenIdRelyingPartyMvc\obj\Debug\OpenIdRelyingPartyMvc.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\OpenIdRelyingPartyMvc\obj\Debug\OpenIdRelyingPartyMvc.pdb

@@ -18,3 +18,13 @@ E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\SuwatAligut2x\bin\sr\DotNetOp
 D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x\bin\DotNetOpenAuth.pdb
 D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x\bin\DotNetOpenAuth.xml
 D:\WebFiles\Suwat2x\SuwatAligut2x\SuwatAligut2x\bin\sr\DotNetOpenAuth.resources.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\bin\SuwatAligut2x.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\bin\SuwatAligut2x.pdb
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\bin\SuwatAligut2x.Data.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\bin\SuwatAligut2x.Data.pdb
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\bin\DotNetOpenAuth.pdb
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\bin\DotNetOpenAuth.xml
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\bin\sr\DotNetOpenAuth.resources.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\obj\Debug\ResolveAssemblyReference.cache
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\obj\Debug\SuwatAligut2x.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\obj\Debug\SuwatAligut2x.pdb

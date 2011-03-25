@@ -3,3 +3,8 @@ E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\facebook\bin\Debug\FacebookAP
 E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\facebook\obj\Debug\ResolveAssemblyReference.cache
 E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\facebook\obj\Debug\FacebookAPI.dll
 E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\facebook\obj\Debug\FacebookAPI.pdb
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\facebook\bin\Debug\FacebookAPI.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\facebook\bin\Debug\FacebookAPI.pdb
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\facebook\obj\Debug\ResolveAssemblyReference.cache
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\facebook\obj\Debug\FacebookAPI.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\facebook\obj\Debug\FacebookAPI.pdb

@@ -3,3 +3,8 @@ E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\sample\bin\oAuthSample.pdb
 E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\sample\obj\Debug\ResolveAssemblyReference.cache
 E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\sample\obj\Debug\oAuthSample.dll
 E:\Rob\projects (local copy)\Suwat2x\SuwatAligut2x\sample\obj\Debug\oAuthSample.pdb
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\sample\bin\oAuthSample.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\sample\bin\oAuthSample.pdb
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\sample\obj\Debug\ResolveAssemblyReference.cache
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\sample\obj\Debug\oAuthSample.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\sample\obj\Debug\oAuthSample.pdb
