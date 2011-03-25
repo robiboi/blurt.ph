@@ -57,15 +57,14 @@ namespace SuwatAligut2x.Helpers
         public static MvcHtmlString LogonUser(this HtmlHelper htmlHelper)
         {
             UsersModels user = new UsersModels();
-            string LoginUserDisplayName = user.GetUserByOpenId(HttpContext.Current.User.Identity.Name).DisplayName;
+            user = user.GetUserByOpenId(HttpContext.Current.User.Identity.Name);
+            string LoginUserDisplayName = user.DisplayName;
 
-            TagBuilder anchor = new TagBuilder("a")
-            {
-                InnerHtml = LoginUserDisplayName
-            };
-            anchor.MergeAttribute("href", "");
+            string anc = HtmlHelper.GenerateLink(htmlHelper.ViewContext.RequestContext, 
+                htmlHelper.RouteCollection, LoginUserDisplayName, "", "Index", "Users", 
+                new System.Web.Routing.RouteValueDictionary(new { id = user.UserId }), null);
 
-            return MvcHtmlString.Create(anchor.ToString(TagRenderMode.Normal));
+            return MvcHtmlString.Create(anc);
         }
     }
 }

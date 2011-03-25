@@ -92,6 +92,7 @@
     <Content Include="Views\Shared\PostMessages.ascx" />
     <Content Include="Views\Shared\Posts.ascx" />
     <Content Include="Views\Users\Authenticate.aspx" />
+    <Content Include="Views\Users\Index.aspx" />
     <Content Include="Views\Users\Logon.aspx" />
     <Content Include="Views\Users\Post.aspx" />
     <Content Include="Views\Users\UserPosts.aspx" />

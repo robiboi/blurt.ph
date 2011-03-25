@@ -17,6 +17,12 @@ namespace SuwatAligut2x
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "User Profile",
+                "user/{id}",
+                new { controller = "Users", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 "Users Posts",
                 "users/post/{userid}/{msgid}",
                 new { controller = "Users", action = "Post", userid = UrlParameter.Optional, msgid = UrlParameter.Optional }

@@ -7,11 +7,13 @@ using System.ComponentModel;
 using System.Web.Security;
 using SuwatAligut2x.Data.Repositories;
 using SuwatAligut2x.Data;
+using System.Web.Mvc;
 
 namespace SuwatAligut2x.Models
 {
     public class UsersModels
     {
+        [HiddenInput(DisplayValue=false)]
         [DisplayName("User Id")]
         public int UserId { get; set; }
 
@@ -27,8 +29,12 @@ namespace SuwatAligut2x.Models
         [DisplayName("Location")]
         public string Location { get; set; }
 
+        [HiddenInput(DisplayValue=false)]
         [DisplayName("Age")]
         public int Age { get; set; }
+
+        [DisplayName("Birth Date")]
+        public DateTime BirthDate { get; set; }
 
         [DisplayName("Users OpenId's")]
         public List<OpenIdsModels> OpenId { get; set; }
@@ -108,6 +114,7 @@ namespace SuwatAligut2x.Models
             if (tagIya.BirthDate.HasValue)
                 user.Age = (DateTime.Now.Year - tagIya.BirthDate.Value.Year);
             user.Location = tagIya.Location;
+            user.BirthDate = tagIya.BirthDate.HasValue ? tagIya.BirthDate.Value : new DateTime();
 
             return user;
         }

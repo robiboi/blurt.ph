@@ -19,6 +19,22 @@ namespace SuwatAligut2x.Controllers
         //
         // GET: /Users/
 
+        [Authorize]
+        public ActionResult Index(int id)
+        {
+            UsersModels user = new UsersModels();
+            user.UserId = id;
+            user = user.GetUser();
+            return View(user);
+        }
+
+        [HttpPost]
+        [Authorize]
+        public ActionResult Index(UsersModels user)
+        {
+            return View();
+        }
+
         #region Login Logic
         public ActionResult Logon()
         {
