@@ -178,9 +178,9 @@ namespace SuwatAligut2x.Data
 		}
 		
 		[Function(Name="dbo.SPI_BagOngTagIya")]
-		public int SPI_BagOngTagIya([Parameter(Name="OpenId", DbType="NVarChar(250)")] string openId, [Parameter(Name="OpenIdFriendly", DbType="NVarChar(150)")] string openIdFriendly)
+		public int SPI_BagOngTagIya([Parameter(Name="OpenId", DbType="NVarChar(250)")] string openId, [Parameter(Name="OpenIdFriendly", DbType="NVarChar(150)")] string openIdFriendly, [Parameter(Name="Email", DbType="NVarChar(125)")] string email)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), openId, openIdFriendly);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), openId, openIdFriendly, email);
 			return ((int)(result.ReturnValue));
 		}
 	}

@@ -6,6 +6,7 @@ using System.Web;
 using System.ComponentModel;
 using SuwatAligut2x.Data;
 using SuwatAligut2x.Data.Repositories;
+using SuwatAligut2x.Helpers;
 
 namespace SuwatAligut2x.Models
 {
@@ -71,7 +72,7 @@ namespace SuwatAligut2x.Models
             post.PostUserId = tagIya.UserId;
             post.MessageId = msg.MessageId;
             if (string.IsNullOrEmpty(tagIya.Gravatar))
-                post.Gravatar = Utility.GetMD5Hash("noemail@robiboi.com");
+                post.Gravatar = Utility.GetMD5Hash(PostHelper.GetRandomString(10) + "@no-email.com");
             else
                 post.Gravatar = Utility.GetMD5Hash(tagIya.Gravatar);
 
@@ -100,9 +101,12 @@ namespace SuwatAligut2x.Models
                 foreach (Mensahe msg in msgs)
                 {
                     var tagIya = tir.GetUserbyMsgId(msg.MessageId);
-                    PostsModels post = this.GetPostsModel(tagIya, msg);
-
-                    posts.Add(post);
+                    // we don't want to display the message for those non-existing users
+                    if (tagIya != null)
+                    {
+                        PostsModels post = this.GetPostsModel(tagIya, msg);
+                        posts.Add(post);
+                    }
                 }
                 return posts;
             }

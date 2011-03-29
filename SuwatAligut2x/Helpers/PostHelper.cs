@@ -43,6 +43,21 @@ namespace SuwatAligut2x.Helpers
             return response.FriendlyIdentifierForDisplay;
         }
 
+        public static string GetRandomString(int length)
+        {
+            string letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._";
+            Random rand = new Random();
+            
+            string randomString = "";
+            for (int i = 0; i < length; i++)
+            {
+                int index = rand.Next(letters.Length);
+                randomString += letters[index].ToString();
+            }
+
+            return randomString;
+        }
+
         public static int GetUserId(string openId)
         {
             UsersModels user = new UsersModels();

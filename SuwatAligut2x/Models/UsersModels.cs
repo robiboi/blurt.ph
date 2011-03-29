@@ -23,7 +23,7 @@ namespace SuwatAligut2x.Models
         [DisplayName("Full Name")]
         public string FullName { get; set; }
 
-        [DisplayName("User Avatar")]
+        [DisplayName("Email (Used for Gravatar)")]
         public string Gravatar { get; set; }
 
         [DisplayName("Location")]
@@ -72,12 +72,12 @@ namespace SuwatAligut2x.Models
             }
         }
 
-        public UsersModels CreateNewUser(string openId, string openIdFriendly)
+        public UsersModels CreateNewUser(string openId, string openIdFriendly, string email)
         {
             TagIyaRepository tir = new TagIyaRepository();
             try
             {
-                TagIya newUser = tir.CreateNewUser(openId, openIdFriendly);
+                TagIya newUser = tir.CreateNewUser(openId, openIdFriendly, email);
                 return GetUserModel(newUser);
             }
             catch
@@ -103,6 +103,19 @@ namespace SuwatAligut2x.Models
             }
         }
 
+        public void UpdateUser()
+        {
+            TagIyaRepository tir = new TagIyaRepository();
+            try
+            {
+                tir.UpdateUser(this.UserId, this.DisplayName, this.Gravatar, this.FullName, this.Location, this.BirthDate);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
         private UsersModels GetUserModel(TagIya tagIya)
         {
             UsersModels user = new UsersModels();
@@ -110,7 +123,10 @@ namespace SuwatAligut2x.Models
             user.UserId = tagIya.UserId;
             user.DisplayName = tagIya.ScreenName;
             user.FullName = tagIya.RealName;
-            user.Gravatar = tagIya.Gravatar;
+            if (!string.IsNullOrEmpty(tagIya.Gravatar) && tagIya.Gravatar.Contains("@no-email.com"))
+                user.Gravatar = "";
+            else
+                user.Gravatar = tagIya.Gravatar;
             if (tagIya.BirthDate.HasValue)
                 user.Age = (DateTime.Now.Year - tagIya.BirthDate.Value.Year);
             user.Location = tagIya.Location;

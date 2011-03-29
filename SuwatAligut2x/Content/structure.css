@@ -67,3 +67,40 @@
     font-size: 12px;
     font-weight: normal;
 }
+
+.UserDetails
+{
+    float: left;
+    width: 400px;
+}
+
+.GravatarField
+{
+    float: left;
+    width: 300px;
+}
+
+.btnVote
+{
+    width:15px;
+    height:18px;
+    background: #fff url('/Images/up-and-down-arrow-vector.jpg');
+}
+
+.btnVote.VoteUp
+{
+    position: absolute;
+    background-position: 14px 0px;
+    left: -15px;
+}
+.btnVote.VoteDown
+{
+    position: absolute;
+    background-position: 0px 18px;
+    right: -15px;
+}
+
+.Relative
+{
+    position: relative;
+}

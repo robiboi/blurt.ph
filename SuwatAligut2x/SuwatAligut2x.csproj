@@ -85,6 +85,7 @@
     <Content Include="Images\openid-providers-en.png" />
     <Content Include="Content\openid.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\up-and-down-arrow-vector.jpg" />
     <Content Include="Scripts\openid-en.js" />
     <Content Include="Scripts\openid-jquery.js" />
     <Content Include="Views\Home\CreatePost.ascx" />

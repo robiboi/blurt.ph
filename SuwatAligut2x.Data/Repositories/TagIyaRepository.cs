@@ -68,13 +68,35 @@ namespace SuwatAligut2x.Data.Repositories
             }
         }
 
-        public TagIya CreateNewUser(string OpenId, string OpenIdFriendly)
+        public TagIya CreateNewUser(string OpenId, string OpenIdFriendly, string Email)
         {
             try
             {
-                int userId = context.SPI_BagOngTagIya(OpenId, OpenIdFriendly);
+                int userId = context.SPI_BagOngTagIya(OpenId, OpenIdFriendly, Email);
 
                 return GetTagIya(userId);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public void UpdateUser(int UserId, string ScreenName, string Gravatar, string RealName, string Location, DateTime BirthDate)
+        {
+            try
+            {
+                var tagIya = (from t in context.TagIyas
+                              where t.UserId == UserId
+                              select t).FirstOrDefault();
+
+                tagIya.ScreenName = ScreenName;
+                tagIya.Gravatar = string.IsNullOrEmpty(Gravatar) ? ScreenName + "@no-email.com" : Gravatar;
+                tagIya.RealName = RealName;
+                tagIya.Location = Location;
+                tagIya.BirthDate = BirthDate;
+
+                context.SubmitChanges();
             }
             catch
             {

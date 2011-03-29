@@ -104,6 +104,7 @@
   <Function Name="dbo.SPI_BagOngTagIya" Method="SPI_BagOngTagIya">
     <Parameter Name="OpenId" Parameter="openId" Type="System.String" DbType="NVarChar(250)" />
     <Parameter Name="OpenIdFriendly" Parameter="openIdFriendly" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="NVarChar(125)" />
     <Return Type="System.Int32" />
   </Function>
 </Database>

@@ -32,7 +32,8 @@ namespace SuwatAligut2x.Controllers
         [Authorize]
         public ActionResult Index(UsersModels user)
         {
-            return View();
+            user.UpdateUser();
+            return View(user);
         }
 
         #region Login Logic
@@ -102,6 +103,7 @@ namespace SuwatAligut2x.Controllers
                             roi.ClaimedOpenId = response.ClaimedIdentifier;
                             roi.FriendlyOpenId = PostHelper.GetFriendlyOpenId(response, email);
                             roi.ReturnUrl = returnUrl;
+                            roi.Email = email;
                             return View(roi);
                         }
 
@@ -131,7 +133,7 @@ namespace SuwatAligut2x.Controllers
         public ActionResult OpenIdConfirm(RegisterOpenId openId)
         {
             UsersModels user = new UsersModels();
-            user.CreateNewUser(openId.ClaimedOpenId, openId.FriendlyOpenId);
+            user.CreateNewUser(openId.ClaimedOpenId, openId.FriendlyOpenId, openId.Email);
             
             FormsAuthenticationService formAuth = new FormsAuthenticationService();
             formAuth.SignIn(openId.ClaimedOpenId, false);

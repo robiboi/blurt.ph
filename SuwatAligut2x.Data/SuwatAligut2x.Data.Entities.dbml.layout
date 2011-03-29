@@ -26,7 +26,7 @@
         <elementListCompartment Id="b480d41c-87c1-430d-8a16-9073fa4d5261" absoluteBounds="4.1400000000000006, 1.46, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.96875 : 5.125); (5.96875 : 4.26050048828125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.96875 : 5.125); (5.96875 : 4.26050048828125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/SuwatAligut2x_Data_EntitiesDataContext/Mensahe/Mensahe_BotarSaMensahe" />
       <nodes>
         <classShapeMoniker Id="a2ff5263-a165-4ebd-befb-dab09ac7e363" />
@@ -40,7 +40,7 @@
         <classShapeMoniker Id="6bb6dc79-0603-49d4-81ee-49dcdf2d5cbf" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(4.90625 : 5.125); (4.90625 : 2.26050048828125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(4.90625 : 5.125); (4.90625 : 2.26050048828125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/SuwatAligut2x_Data_EntitiesDataContext/Mensahe/Mensahe_MensaheSaTagIya" />
       <nodes>
         <classShapeMoniker Id="a2ff5263-a165-4ebd-befb-dab09ac7e363" />
@@ -59,28 +59,28 @@
         <elementListCompartment Id="8258f295-32d2-4083-9eb2-a7ea85388df5" absoluteBounds="0.76500000000000012, 3.085, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.75 : 3.63025024414063); (4.82291666666667 : 3.63025024414062 : JumpStart); (4.98958333333333 : 3.63025024414063 : JumpEnd); (5.5 : 3.63025024414063)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 3.63025024414063); (5.5 : 3.63025024414063)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/SuwatAligut2x_Data_EntitiesDataContext/TagIya/TagIya_BotarSaMensahe" />
       <nodes>
         <classShapeMoniker Id="1ada87e6-e949-4f45-a3dd-a2c7521e6886" />
         <classShapeMoniker Id="070b05e9-3f69-4985-91fe-6728a7fb5199" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2 : 4.54288981119792); (2 : 5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2 : 4.54288981119792); (2 : 5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/SuwatAligut2x_Data_EntitiesDataContext/TagIya/TagIya_Kumentaryo" />
       <nodes>
         <classShapeMoniker Id="1ada87e6-e949-4f45-a3dd-a2c7521e6886" />
         <classShapeMoniker Id="6bb6dc79-0603-49d4-81ee-49dcdf2d5cbf" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 2.78125); (4.4843725 : 2.78125); (4.4843725 : 2.26050048828125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 2.78125); (4.4843725 : 2.78125); (4.4843725 : 2.26050048828125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/SuwatAligut2x_Data_EntitiesDataContext/TagIya/TagIya_MensaheSaTagIya" />
       <nodes>
         <classShapeMoniker Id="1ada87e6-e949-4f45-a3dd-a2c7521e6886" />
         <classShapeMoniker Id="1497ea81-fe3b-4040-913a-4b15c8ca8bec" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(1.9375 : 2.625); (1.9375 : 1.92484781901042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(1.9375 : 2.625); (1.9375 : 1.92484781901042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/SuwatAligut2x_Data_EntitiesDataContext/TagIya/TagIya_OpenIdSaTagIya" />
       <nodes>
         <classShapeMoniker Id="1ada87e6-e949-4f45-a3dd-a2c7521e6886" />

@@ -18,6 +18,7 @@
     <%=Html.HiddenFor(m=>m.ClaimedOpenId)%>
     <%=Html.HiddenFor(m=>m.FriendlyOpenId)%>
     <%=Html.HiddenFor(m=>m.ReturnUrl)%>
+    <%=Html.HiddenFor(m=>m.Email) %>
     
     <%=Model.FriendlyOpenId%>
     <input type="submit" value="Confirm and Create New Account" />

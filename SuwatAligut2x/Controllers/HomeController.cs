@@ -56,6 +56,7 @@ namespace SuwatAligut2x.Controllers
             return PartialView();
         }
 
+        [Authorize]
         [HttpPost]
         public PartialViewResult CreatePost(FormCollection form)
         {

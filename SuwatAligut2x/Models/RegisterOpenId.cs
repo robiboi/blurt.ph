@@ -10,5 +10,6 @@ namespace SuwatAligut2x.Models
         public string ClaimedOpenId { get; set; }
         public string FriendlyOpenId { get; set; }
         public string ReturnUrl { get; set; }
+        public string Email { get; set; }
     }
 }
