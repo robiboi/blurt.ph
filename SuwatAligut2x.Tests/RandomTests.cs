@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SuwatAligut2x.Models;
+using SuwatAligut2x.Helpers;
 
 namespace SuwatAligut2x.Tests
 {
@@ -65,12 +66,22 @@ namespace SuwatAligut2x.Tests
         {
             string openid = "myopenid";
             string friendlyopenid = "friendlyopenid";
+            string email = "hunter012hk@gmail.com";
 
             UsersModels user = new UsersModels();
-            user = user.CreateNewUser(openid, friendlyopenid);
+            user = user.CreateNewUser(openid, friendlyopenid, email);
 
             Assert.AreEqual(openid, user.OpenId[0].OpenId);
             Assert.AreEqual(friendlyopenid, user.OpenId[0].FriendlyOpenId);
+        }
+
+        [TestMethod]
+        public void GetRandomStringTest()
+        {
+            int length = 10;
+            string str = PostHelper.GetRandomString(length);
+
+            Assert.AreEqual(length, str.Length);
         }
     }
 }
