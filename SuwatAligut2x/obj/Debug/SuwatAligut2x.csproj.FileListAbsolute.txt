@@ -28,3 +28,5 @@ E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\bin\sr\DotNetOpenAut
 E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\obj\Debug\ResolveAssemblyReference.cache
 E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\obj\Debug\SuwatAligut2x.dll
 E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\obj\Debug\SuwatAligut2x.pdb
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\bin\FacebookAPI.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x\bin\FacebookAPI.pdb

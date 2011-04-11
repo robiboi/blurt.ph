@@ -9,6 +9,7 @@ using DotNetOpenAuth.Messaging;
 using DotNetOpenAuth.OpenId.RelyingParty;
 using DotNetOpenAuth.OpenId.Extensions.AttributeExchange;
 using SuwatAligut2x.Helpers;
+using System.Configuration;
 
 namespace SuwatAligut2x.Controllers
 {
@@ -49,9 +50,76 @@ namespace SuwatAligut2x.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        public ActionResult FacebookAuth(string returnUrl)
+        {
+            string appId = ConfigurationManager.AppSettings["AppId"];
+            string facebookauth = ConfigurationManager.AppSettings["FacebookAuthURL"];
+            string appsecret = ConfigurationManager.AppSettings["AppSecret"];
+            
+            // if code is not available, we should request some.
+            if (Request.Params["code"] == null)
+            {
+                string code_url = @"https://www.facebook.com/dialog/oauth?client_id=" + appId + 
+                    "&redirect_uri=" + Server.UrlEncode(facebookauth) + "&scope=email,read_stream";
+                Response.Redirect(code_url);
+            }
+            else
+            {
+                string token_url = @"https://graph.facebook.com/oauth/access_token?client_id=" + appId +
+                                    "&redirect_uri=" + facebookauth + "&client_secret=" + appsecret + "&code=" + Request.Params["code"];
+
+                string tokenKeyValue = PostHelper.file_get_contents(token_url);
+                string token = PostHelper.GetKeyValueFromString(tokenKeyValue, "access_token");
+
+                Facebook.FacebookAPI api = new Facebook.FacebookAPI(token);
+
+                Facebook.JSONObject me = api.Get("/me");
+
+                UsersModels user = new UsersModels();
+
+                // NOTE: 
+                // api.AccessToken is temporary. It will be replaced to a 
+                // more proper ClaimedOpenId or public profile for facebook. e.g. http://www.facebook.com/robiboi
+
+                user = user.GetUserByOpenId(api.AccessToken);   // should be the identifier of the user in facebook, e.g. profile link.
+                if (user == null)
+                {
+                    RegisterOpenId roi = new RegisterOpenId();
+                    roi.ClaimedOpenId = api.AccessToken; // same as above
+                    roi.FriendlyOpenId = api.AccessToken; // could be profile link.
+                    roi.ReturnUrl = returnUrl;
+                    roi.Email = null;
+                    return View(roi);
+                }
+
+                FormsAuthenticationService formAuth = new FormsAuthenticationService();
+                formAuth.SignIn(api.AccessToken, false);
+
+                if (!string.IsNullOrEmpty(returnUrl))
+                {
+                    return Redirect(returnUrl);
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+            return new EmptyResult();
+        }
+
         [ValidateInput(false)]
         public ActionResult Authenticate(string returnUrl)
         {
+            // handle oauth authentication
+            if (string.IsNullOrEmpty(Request.Form["openid_identifier"]))
+            {
+                // handle oauth version 2.0
+                if (Request.Form["oauth_version"] == "2.0")
+                {
+                    return FacebookAuth(returnUrl);
+                }
+            }
+
             var response = openid.GetResponse();
             
             if (response == null)

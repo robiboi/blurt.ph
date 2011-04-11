@@ -125,6 +125,10 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\facebook\FacebookAPI.csproj">
+      <Project>{1F538275-4C0C-4983-8D92-BFF2AA0E5FC1}</Project>
+      <Name>FacebookAPI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SuwatAligut2x.Data\SuwatAligut2x.Data.csproj">
       <Project>{6295E9F6-B3E6-4007-887B-8837B36B7C70}</Project>
       <Name>SuwatAligut2x.Data</Name>

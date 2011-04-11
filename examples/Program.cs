@@ -35,6 +35,7 @@ namespace FacebookSampleApp
 
             JSONObject me = api.Get("/4");
             Console.WriteLine(me.Dictionary["name"].String);
+            Console.ReadLine();
         }
     }
 }

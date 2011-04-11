@@ -168,6 +168,7 @@ var openid = {
 
             if (provider['oauth_version']) {
                 this.setOAuthInfo(provider['oauth_version'], provider['oauth_server']);
+                // handle oauth authentication here.
             } else {
                 this.setOpenIdUrl(provider['url']);
             }

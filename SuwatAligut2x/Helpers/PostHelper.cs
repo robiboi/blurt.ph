@@ -81,5 +81,57 @@ namespace SuwatAligut2x.Helpers
 
             return MvcHtmlString.Create(anc);
         }
+
+        public static string file_get_contents(string fileName)
+        {
+            string sContents = string.Empty;
+            if (fileName.ToLower().IndexOf("http:") > -1 || fileName.ToLower().IndexOf("https:") > -1)
+            { // URL 
+                System.Net.WebClient wc = new System.Net.WebClient();
+                byte[] response = wc.DownloadData(fileName);
+                sContents = System.Text.Encoding.ASCII.GetString(response);
+            }
+            else
+            {
+                // Regular Filename 
+                System.IO.StreamReader sr = new System.IO.StreamReader(fileName);
+                sContents = sr.ReadToEnd();
+                sr.Close();
+            }
+            return sContents;
+        }
+
+        public static List<KeyValuePair<string, string>> StringToKeyValuePair(string keyValueStr)
+        {
+            string[] strSplit = keyValueStr.Split('&');
+            List<KeyValuePair<string, string>> lstKeyValuePair = new List<KeyValuePair<string,string>>();
+
+            foreach (string str in strSplit)
+            {
+                string[] s = str.Split('=');
+                lstKeyValuePair.Add(new KeyValuePair<string, string>(s[0], s[1]));
+            }
+            return lstKeyValuePair;
+        }
+
+        public static string GetKeyValueFromString(string keyValueStr, string keyName)
+        {
+            string[] strSplit = keyValueStr.Split('&');
+            string valueStr = "";
+
+            foreach (string str in strSplit)
+            {
+                string[] s = str.Split('=');
+                string key = s[0];
+                string value = s[1];
+                if (key == keyName)
+                {
+                    valueStr = value;
+                    break;
+                }
+            }
+
+            return valueStr;
+        }
     }
 }

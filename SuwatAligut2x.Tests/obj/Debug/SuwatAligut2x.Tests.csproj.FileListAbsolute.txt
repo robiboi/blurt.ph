@@ -40,3 +40,5 @@ E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x.Tests\bin\Debug\sr\D
 E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x.Tests\obj\Debug\ResolveAssemblyReference.cache
 E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x.Tests\obj\Debug\SuwatAligut2x.Tests.dll
 E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x.Tests\obj\Debug\SuwatAligut2x.Tests.pdb
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x.Tests\bin\Debug\FacebookAPI.dll
+E:\Rob\projects (local copy)\Suwat2x\blurt.ph\SuwatAligut2x.Tests\bin\Debug\FacebookAPI.pdb

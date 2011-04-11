@@ -23,6 +23,8 @@
 	<p>You must log in before entering the Members Area: </p>
 	<form action="Authenticate?ReturnUrl=<%=HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]) %>" method="post" id="openid_form">
 		<input type="hidden" name="action" value="verify" />
+		<input type="hidden" name="oauth_version" id="oauth_version" />
+		<input type="hidden" name="oauth_serveer" id="oauth_server" />
 		<fieldset>
 			<legend>Sign-in or Create New Account</legend>
 			<div id="openid_choice">
